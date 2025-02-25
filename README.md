@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Directorio de Responsables
 
-## Getting Started
+Esta aplicación web muestra un directorio de responsables por departamento y posición, desarrollada con Next.js 14, TypeScript y Tailwind CSS.
 
-First, run the development server:
+## Características
+
+- Servicio web que expone datos de responsables
+- Interfaz responsive y atractiva para mostrar los datos
+- Filtrado por tipo (departamentos y personas)
+- Búsqueda por nombre o puesto
+- Vista detallada de cada responsable
+- Optimizado para rendimiento
+
+## Tecnologías utilizadas
+
+- **Next.js 14**: Framework principal
+- **TypeScript**: Tipado estático
+- **Tailwind CSS**: Estilos y diseño UI
+- **ESLint**: Linting de código
+- **Vercel**: Plataforma de despliegue
+
+## Instalación y ejecución local
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/tu-usuario/directorio-responsables.git
+cd directorio-responsables
+```
+
+2. Instala las dependencias:
+
+```bash
+npm install
+# o
+yarn install
+# o
+pnpm install
+```
+
+3. Ejecuta el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
+# o
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estructura del proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+directorio-responsables/
+├── src/
+│   ├── app/               # Rutas y páginas (App Router)
+│   │   ├── api/           # API endpoints
+│   │   ├── departamentos/ # Página de departamentos
+│   │   ├── personas/      # Página de personas 
+│   │   ├── responsable/   # Página de detalle de responsable
+│   ├── components/        # Componentes reutilizables
+│   ├── data/              # Datos estáticos (JSON)
+│   ├── lib/               # Utilidades y cliente API
+│   ├── services/          # Servicios para manejo de datos
+│   ├── types/             # Definiciones de tipos TypeScript
+├── public/                # Archivos estáticos
+├── .env.local             # Variables de entorno locales
+├── next.config.js         # Configuración de Next.js
+├── tailwind.config.js     # Configuración de Tailwind CSS
+├── tsconfig.json          # Configuración de TypeScript
+```
 
-## Learn More
+## Despliegue
 
-To learn more about Next.js, take a look at the following resources:
+La aplicación está desplegada en Vercel y se puede acceder a través de la siguiente URL:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[https://directorio-responsables.vercel.app](https://directorio-responsables.vercel.app)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Decisiones técnicas
 
-## Deploy on Vercel
+### Arquitectura
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **App Router**: Utilicé el nuevo router de páginas de Next.js 14 para aprovechar sus características de renderizado y optimización.
+- **Componentes reutilizables**: Diseñé componentes modulares para facilitar la mantenibilidad y reutilización.
+- **TypeScript**: Implementé tipado estricto para mejorar la detección de errores temprana.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Optimizaciones
+
+- **Lazy loading**: Implementé carga diferida para componentes pesados.
+- **Caching**: Configuré estrategias de caché para mejorar los tiempos de respuesta.
+
+### UI/UX
+
+- **Diseño responsive**: La aplicación se adapta a diferentes tamaños de pantalla.
+- **Accesibilidad**: Seguí prácticas de accesibilidad en los componentes.
+- **Feedback visual**: Implementé estados de carga y manejo de errores claros.
+
+## Dificultades enfrentadas y soluciones
+
+1. **Manejo de CORS**: Tuve que configurar correctamente los encabezados para evitar problemas de CORS. Solucioné esto implementando la API y el frontend en el mismo dominio utilizando Next.js API Routes.
+
+2. **Optimización de rendimiento**: Mejoré los tiempos de carga implementando server components donde fue posible y aplicando estrategias de caché.
+
+3. **Manejo de tipos**: Al trabajar con datos externos, necesité crear interfaces TypeScript adecuadas. Implementé una estructura robusta de tipos para manejar todos los datos.
+
+## Contacto
+
+Para cualquier pregunta o sugerencia, puedes contactarme en [tu-email@example.com](mailto:tu-email@example.com).
