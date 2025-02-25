@@ -24,8 +24,8 @@ Esta aplicación web muestra un directorio de responsables por departamento y po
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/directorio-responsables.git
-cd directorio-responsables
+git clone git@github.com:johnandrade18/responsables.git
+cd responsables
 ```
 
 2. Instala las dependencias:
