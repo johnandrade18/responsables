@@ -7,7 +7,7 @@ const nextConfig = {
 
   // Configuración para mejorar el rendimiento
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
   },
 
   // Optimización de la compilación y despliegue

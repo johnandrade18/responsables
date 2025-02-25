@@ -107,4 +107,4 @@ La aplicación está desplegada en Vercel y se puede acceder a través de la sig
 
 ## Contacto
 
-Para cualquier pregunta o sugerencia, puedes contactarme en [tu-email@example.com](mailto:tu-email@example.com).
+Para cualquier pregunta o sugerencia, puedes contactarme en [sistemas@johnandrade.com](mailto:sistemas@johnandrade.com).
