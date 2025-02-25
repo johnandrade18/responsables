@@ -76,7 +76,7 @@ directorio-responsables/
 
 La aplicación está desplegada en Vercel y se puede acceder a través de la siguiente URL:
 
-[https://responsables-git-main-johnandrade18s-projects.vercel.app/](https://responsables-git-main-johnandrade18s-projects.vercel.app/)
+[https://responsables.vercel.app/](https://responsables.vercel.app/)
 
 ## Decisiones técnicas
 
